@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ImageFinderApiPixabay/static/css/main.7acaea2f.css",
+    "main.js": "/ImageFinderApiPixabay/static/js/main.ae507b6c.js",
+    "index.html": "/ImageFinderApiPixabay/index.html",
+    "main.7acaea2f.css.map": "/ImageFinderApiPixabay/static/css/main.7acaea2f.css.map",
+    "main.ae507b6c.js.map": "/ImageFinderApiPixabay/static/js/main.ae507b6c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.ae507b6c.js"
+  ]
+}
