@@ -8,6 +8,8 @@ import { Loader } from './Loader.js'
 import { getPictures } from './Api.js'
 import { ImageGallery } from "./ImageGallery.js";
 import { ButtonLoadMore } from './ButtonLoadMore.js'
+import { Eroor } from './Error.js'
+
 
 
 const DEFAULT_STATE = {
@@ -19,10 +21,11 @@ const DEFAULT_STATE = {
   
 export class Searchbar extends Component {
   state = {
-      perPage: 3,
-  searchImage: "Platoon",
+      perPage: 12,
+  searchImage: "Leaf",
   isLoading: false,
-      pictures: [],
+    pictures: [],
+    error: null,
   };
 
   handleChange = evt => {
@@ -39,14 +42,14 @@ export class Searchbar extends Component {
       this.setState({ pictures: response.data.hits, isLoading: false, });
       console.log(response)
     } catch (error) {
-      console.log(error)
+      this.setState({ error: "gbpltwm" , isLoading: false})
+    // <Eroor/>
     }
-  
-    
   }
 
   render() {
-        const { pictures, isLoading, perPage} = this.state;
+    const { pictures, isLoading, perPage, error } = this.state;
+    const handleChange = this.handleChange
     return (
 <div>
           <HeaderSearchbar>
@@ -61,10 +64,10 @@ export class Searchbar extends Component {
               autoComplete="off"
               autoFocus
               placeholder="Search images and photos"
-              onChange={this.handleChange}
+              onChange={handleChange}
             />
           </FormSearchbar>
-          <SelectNumber  id="select" name="perPage" value={perPage} onChange={this.handleChange}>
+          <SelectNumber  id="select" name="perPage" value={perPage} onChange={handleChange}>
             <option value="" >Please choose number </option>            
             <option value="12">12 pictures</option>
             <option value="24">24 pictures</option>
@@ -81,7 +84,8 @@ export class Searchbar extends Component {
             </> : null 
           }
      
-      </div>
+        </div>
+        {error && <Eroor/>}
 </div>
     )
 }

@@ -3,12 +3,11 @@ import { ImageModal } from './Modal.js';
 // import { Loader } from './Loader.js'
 import { getPictures } from './Api.js'
 
-
-
 export const ImageGallery = ({ pictures }) => (  
 
     
     <>
+        <h1 >Photo Gallery</h1>
         <ul className="gallery-item">
             {pictures.map(({ id, pageURL, previewURL, largeImageURL, tags, likes, views, previewWidth, previewHeight }) => (
                 <ImageGalleryItem

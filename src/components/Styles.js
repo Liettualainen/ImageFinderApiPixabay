@@ -101,3 +101,31 @@ background-color: #303f9f;
   border-radius: 5px;
   border: 1px solid black;
 `
+
+export const EroorPage = styled.div `
+//  display: flex;
+//  flex-direction: row;
+//  flex-wrap: wrap;
+//  gap: 120px;
+  // top: 0;
+  // left: 0;
+  // position: sticky;
+  // z-index: 1100;
+  // display: flex;
+  margin-top: 200px;
+  justify-content: center;
+  align-items: center;
+  // min-height: 64px;
+   width: 640px;
+    margin-right: auto;
+        margin-left: auto;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-size: 40px;
+  color: red;
+  background-color: yellow;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+`
