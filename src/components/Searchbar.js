@@ -12,12 +12,11 @@ import { Eroor } from './Error.js'
 
 
 
-const DEFAULT_STATE = {
-  perPage: 3,
-  searchImage: "Platoon",
-  isLoading: false,
-              
-}
+// const DEFAULT_STATE = {
+//   perPage: 3,
+//   searchImage: "Platoon",
+//   isLoading: false,              
+// }
   
 export class Searchbar extends Component {
   state = {
