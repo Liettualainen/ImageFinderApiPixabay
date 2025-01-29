@@ -1,4 +1,4 @@
-import { Container, Main, ImageFooter, ImageHeader } from './Layout.styled'
+import { Container, Main } from './Layout.styled'
 // import header from '../Img/header.png'
 // import  footer from '../Img/footer.png'
 

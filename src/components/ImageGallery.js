@@ -1,7 +1,7 @@
 import { ImageGalleryItem } from "./ImageGalleryItem.js";
 import { ImageModal } from './Modal.js';
 // import { Loader } from './Loader.js'
-import { getPictures } from './Api.js'
+// import { getPictures } from './Api.js'
 
 export const ImageGallery = ({ pictures }) => (  
 
